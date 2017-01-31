@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c332dfff-6369-4ebe-9096-04cd7415811b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8888/CurrencyRates" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CurrencyRates.xsd" MetadataType="Schema" ID="1e9c188a-c95e-461c-925f-3291c8144cdb" SourceId="1" SourceUrl="http://localhost:8888/CurrencyRates?xsd=xsd3" />
+    <MetadataFile FileName="CurrencyRates1.xsd" MetadataType="Schema" ID="c02f398f-9690-49bc-9049-23c00a9442e4" SourceId="1" SourceUrl="http://localhost:8888/CurrencyRates?xsd=xsd1" />
+    <MetadataFile FileName="CurrencyRates.disco" MetadataType="Disco" ID="0e662109-6ee7-491b-b21c-bd455a0e4a47" SourceId="1" SourceUrl="http://localhost:8888/CurrencyRates?disco" />
+    <MetadataFile FileName="CurrencyRates2.xsd" MetadataType="Schema" ID="1e8cc269-db01-4d68-9ef7-f3bdea5303fe" SourceId="1" SourceUrl="http://localhost:8888/CurrencyRates?xsd=xsd2" />
+    <MetadataFile FileName="CurrencyRates3.xsd" MetadataType="Schema" ID="4d8a4f09-5440-4374-9590-4304e420841e" SourceId="1" SourceUrl="http://localhost:8888/CurrencyRates?xsd=xsd0" />
+    <MetadataFile FileName="CurrencyRatesApiService.wsdl" MetadataType="Wsdl" ID="31a33ce2-9a55-4d7d-8860-16634d6a7aab" SourceId="1" SourceUrl="http://localhost:8888/CurrencyRates?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

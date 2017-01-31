@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MobileLife.CurrencyRates.Api.Dto" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MobileLife.CurrencyRates.Api.Dto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8888/CurrencyRates?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/MobileLife.CurrencyRates.Api.Enums" />
+  <xs:complexType name="GetCurrencyRateRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Day" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetCurrencyRateRequest" nillable="true" type="tns:GetCurrencyRateRequest" />
+  <xs:complexType name="GetCurrencyRateResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CurrencyRatesBaseResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Rate" nillable="true" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetCurrencyRateResponse" nillable="true" type="tns:GetCurrencyRateResponse" />
+  <xs:complexType name="CurrencyRatesBaseResponse">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/MobileLife.CurrencyRates.Api.Enums" minOccurs="0" name="ResponseCode" type="q1:ResponseCode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CurrencyRatesBaseResponse" nillable="true" type="tns:CurrencyRatesBaseResponse" />
+  <xs:complexType name="ListCurrencyRatesResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:CurrencyRatesBaseResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CurrencyRates" nillable="true" type="tns:ArrayOfCurrencyRate" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ListCurrencyRatesResponse" nillable="true" type="tns:ListCurrencyRatesResponse" />
+  <xs:complexType name="ArrayOfCurrencyRate">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CurrencyRate" nillable="true" type="tns:CurrencyRate" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCurrencyRate" nillable="true" type="tns:ArrayOfCurrencyRate" />
+  <xs:complexType name="CurrencyRate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseCurrency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Day" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Rate" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TargetCurrency" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CurrencyRate" nillable="true" type="tns:CurrencyRate" />
+  <xs:complexType name="ListStoredCurrencyRatesRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="StartId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListStoredCurrencyRatesRequest" nillable="true" type="tns:ListStoredCurrencyRatesRequest" />
+</xs:schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MobileLife.CurrencyRates.Api.Enums" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MobileLife.CurrencyRates.Api.Enums" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="ResponseCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="200" />
+      <xs:enumeration value="404" />
+      <xs:enumeration value="500" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ResponseCode" nillable="true" type="tns:ResponseCode" />
+</xs:schema>

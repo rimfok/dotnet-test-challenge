@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileLife.CurrencyRates.SelfHost", "MobileLife.CurrencyRates.SelfHost\MobileLife.CurrencyRates.SelfHost.csproj", "{3A939BD8-A3F4-4D25-AB6B-AE82F678F73B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C98AF226-E5D7-48CD-BFE8-ACD2892B7509} = {C98AF226-E5D7-48CD-BFE8-ACD2892B7509}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileLife.CurrencyRates.Database", "MobileLife.CurrencyRates.Database\MobileLife.CurrencyRates.Database.csproj", "{0D5F4CE3-9D36-485D-823E-F73885FD32EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileLife.CurrencyRates.Domain", "MobileLife.CurrencyRates.Domain\MobileLife.CurrencyRates.Domain.csproj", "{C98AF226-E5D7-48CD-BFE8-ACD2892B7509}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileLife.CurrencyRates.Api", "MobileLife.CurrencyRates.Api\MobileLife.CurrencyRates.Api.csproj", "{1D79A4B5-C35F-494D-A504-A0D356EFA171}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B70D2206-AF2A-45C7-AA6E-FCC6505A1713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileLife.CurrencyRates.IntegrationTest", "MobileLife.CurrencyRates.IntegrationTest\MobileLife.CurrencyRates.IntegrationTest.csproj", "{B8055DB4-22F6-42AD-8CA8-26AD2B2B8CFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileLife.CurrencyRates.UnitTest", "MobileLife.CurrencyRates.UnitTest\MobileLife.CurrencyRates.UnitTest.csproj", "{8E2A7082-0403-4770-8EEA-C15C1BA4C54C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A939BD8-A3F4-4D25-AB6B-AE82F678F73B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A939BD8-A3F4-4D25-AB6B-AE82F678F73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A939BD8-A3F4-4D25-AB6B-AE82F678F73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A939BD8-A3F4-4D25-AB6B-AE82F678F73B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D5F4CE3-9D36-485D-823E-F73885FD32EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D5F4CE3-9D36-485D-823E-F73885FD32EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D5F4CE3-9D36-485D-823E-F73885FD32EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D5F4CE3-9D36-485D-823E-F73885FD32EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C98AF226-E5D7-48CD-BFE8-ACD2892B7509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C98AF226-E5D7-48CD-BFE8-ACD2892B7509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C98AF226-E5D7-48CD-BFE8-ACD2892B7509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C98AF226-E5D7-48CD-BFE8-ACD2892B7509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D79A4B5-C35F-494D-A504-A0D356EFA171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D79A4B5-C35F-494D-A504-A0D356EFA171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D79A4B5-C35F-494D-A504-A0D356EFA171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D79A4B5-C35F-494D-A504-A0D356EFA171}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8055DB4-22F6-42AD-8CA8-26AD2B2B8CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8055DB4-22F6-42AD-8CA8-26AD2B2B8CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8055DB4-22F6-42AD-8CA8-26AD2B2B8CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8055DB4-22F6-42AD-8CA8-26AD2B2B8CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E2A7082-0403-4770-8EEA-C15C1BA4C54C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E2A7082-0403-4770-8EEA-C15C1BA4C54C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E2A7082-0403-4770-8EEA-C15C1BA4C54C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E2A7082-0403-4770-8EEA-C15C1BA4C54C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8055DB4-22F6-42AD-8CA8-26AD2B2B8CFC} = {B70D2206-AF2A-45C7-AA6E-FCC6505A1713}
+		{8E2A7082-0403-4770-8EEA-C15C1BA4C54C} = {B70D2206-AF2A-45C7-AA6E-FCC6505A1713}
+	EndGlobalSection
+EndGlobal
